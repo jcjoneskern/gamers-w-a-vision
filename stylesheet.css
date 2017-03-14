@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #3f4647;
+  color: #fff;
+}
+section {
+  background: rgba(123, 175, 157, .7);
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Navigation*/
+nav {
+  text-align: center;
+}
+nav a > li {
+  display: inline-block;
+  padding: 0 1em 0 1em;
+}
+nav li {
+  list-style: none;
+  text-align: center;
+}
+nav ul {
+  padding: 0;
+}
+nav li li {
+  font-style: italic;
+  font-size: .9em;
+}
