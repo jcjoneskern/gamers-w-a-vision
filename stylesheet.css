@@ -4,7 +4,7 @@ body {
   margin: 0;
   background: #e0ffe9;
   color: #fff;
-  width: 100%;
+  /*width: 100%;*/
 }
 header {
   background: #0078ab;
@@ -46,6 +46,8 @@ h1 {
 img {
   margin: 1em auto;
   margin-top: 60px;
+  width: 50vw;
+  max-width: 563px;
 }
 blockquote {
   font-style: italic;
