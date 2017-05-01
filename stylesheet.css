@@ -4,23 +4,30 @@ body {
   margin: 0;
   background: #e0ffe9;
   color: #fff;
-  /*width: 100%;*/
 }
 header {
   background: #0078ab;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
+  height: auto;
+  clear: both;
+  display: block;
 }
 header h1 {
   margin: 0;
+}
+.clearfix {
+  display: none;
+  height: 0;
+  clear: both;
+  padding-top: 49px;
 }
 section {
   background: #0078ab;
   border-radius: 10px;
   width: 70%;
-  margin: 2em;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-top: 60px;
   padding: 1em;
   display: inline-block;
@@ -56,14 +63,13 @@ blockquote {
 
 /*navigation*/
 .general {
-  float: left;
   width: 20%;
   background: #7baf9d;
   height: 100%;
   position: fixed;
-  clear: right;
   padding-top: 2em;
   z-index: 0;
+  display: block;
 }
 .general a > li {
   padding: 1em 0;
@@ -94,4 +100,44 @@ nav ul {
 nav li li {
   font-style: italic;
   font-size: .9em;
+}
+
+@media (max-width: 730px) {
+  .general li ul {
+    display: none;
+  }
+  #img {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .clearfix {
+    display: block;
+  }
+  .general {
+    width: 100%;
+    height: 50px;
+    clear: both;
+    padding: 0;
+    position: fixed;
+    z-index: 1;
+  }
+  .general a > li {
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .general li {
+    display: inline-block;
+    height: auto;
+    width: 19%;
+    clear: both;
+  }
+  section {
+    clear: both;
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0;
+  }
 }
